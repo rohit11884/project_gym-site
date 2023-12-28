@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit's Gym</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Noto+Sans:wght@300&family=Playfair+Display:wght@500&family=Playpen+Sans:wght@100&family=Poppins:wght@300;800&family=Quicksand:wght@300&family=Roboto+Condensed:wght@400;600&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="css/fitness.css">
+<style>
+    /* css Reset  */
+    body {
+        font-family: 'Alumni Sans Collegiate One', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Playfair Display', serif;
+        font-family: 'Playpen Sans', cursive;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('gym2.jpg');
+        background-size: cover;
+
+    }
+
+    .left {
+        position: absolute;
+        left: 10px;
+        top: 1px;
+        display: inline-block;
+        /* border: solid 2px red; */
+
+    }
+
+    .left div {
+        text-align: center;
+        line-height: 0px;
+        font-size: 17px;
+
+    }
+
+    .mid {
+        display: block;
+        width: 36%;
+        margin: 17px auto;
+        /* border: solid 2px yellow; */
+
+    }
+
+    .right {
+        position: absolute;
+        right: 14px;
+        top: 20px;
+        display: inline;
+        /* border: solid 2px green; */
+
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 4px 7px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .left img {
+        width: 85px;
+        /* filter: invert(100%);   It convert black image to white and vice versa */
+
+    }
+
+    .btn {
+        font-family: 'Alumni Sans Collegiate One', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Playfair Display', serif;
+        font-family: 'Playpen Sans', cursive;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+        margin: 0px 9px;
+        color: white;
+        background-color: #101111;
+        padding: 3px 4px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(58, 55, 55);
+    }
+
+    .container {
+        /* border: 2px solid white; */
+        margin: 0px 2px;
+        padding: 90px;
+        width: 37% ;
+        border-radius: 6%;
+    }
+    .form-group input{
+        font-family: 'Alumni Sans Collegiate One', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
+        font-family: 'Playfair Display', serif;
+        font-family: 'Playpen Sans', cursive;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Quicksand', sans-serif;
+        font-family: 'Roboto Condensed', sans-serif;
+
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 20px;
+        border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+    }   
+    .container button{
+        display: block;
+        width:78%;
+        margin: 30px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="gym-logo.png">
+            <div>Rohit Fitness</div>
+
+        </div>
+
+        <div class="mid">
+
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a> </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="noactoin.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Mobile number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+       
+    </div>
+
+</body>
+
+</html>
